@@ -1,0 +1,6 @@
+segmentation.exe:segmentationapp.o segimp.o
+	cc -o segmentation.exe segmentationapp.o segimp.o
+segmentationapp.o:segmentationapp.c
+	cc -c segmentationapp.c
+segimp.o:segimp.c
+	cc -c segimp.c
